@@ -48,7 +48,7 @@ def get_lat_lon(postal_code):
 df = pd.read_csv('utf_ken_all.csv', header=None, encoding='utf-8', dtype=str)
 
 # 必要な列を抽出
-df = df[[3, 7, 8, 9]]
+df = df[[2, 7, 8, 9]]
 df.columns = ['郵便番号', '都道府県', '市区町村', '町域']
 
 # 緯度と経度を取得する関数を適用
